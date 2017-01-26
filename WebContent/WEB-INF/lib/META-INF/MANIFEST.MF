@@ -1,0 +1,58 @@
+Manifest-Version: 1.0
+Export-Package: org.hibernate.validator;uses:="javax.validation,javax.
+ validation.spi,org.hibernate.validator.cfg,org.hibernate.validator.sp
+ i.resourceloading";version="5.0.2.Final",org.hibernate.validator.cfg;
+ uses:="javax.validation,org.hibernate.validator.cfg.context";version=
+ "5.0.2.Final",org.hibernate.validator.cfg.context;uses:="org.hibernat
+ e.validator.cfg,org.hibernate.validator.spi.group";version="5.0.2.Fin
+ al",org.hibernate.validator.cfg.defs;uses:="org.hibernate.validator.c
+ fg,javax.validation.constraints,org.hibernate.validator.constraints";
+ version="5.0.2.Final",org.hibernate.validator.constraints.br;uses:="o
+ rg.hibernate.validator.constraints,javax.validation,javax.validation.
+ constraints";version="5.0.2.Final",org.hibernate.validator.constraint
+ s;uses:="javax.validation,javax.validation.constraints";version="5.0.
+ 2.Final",org.hibernate.validator.group;uses:="org.hibernate.validator
+ .spi.group";version="5.0.2.Final",org.hibernate.validator.messageinte
+ rpolation;uses:="javax.validation,org.hibernate.validator.spi.resourc
+ eloading,org.hibernate.validator.resourceloading";version="5.0.2.Fina
+ l",org.hibernate.validator.resourceloading;uses:="org.hibernate.valid
+ ator.spi.resourceloading,org.jboss.logging";version="5.0.2.Final",org
+ .hibernate.validator.spi.resourceloading;version="5.0.2.Final",org.hi
+ bernate.validator.spi.group;version="5.0.2.Final"
+Implementation-Title: hibernate-validator
+Implementation-Version: 5.0.2.Final
+Built-By: hardy
+Tool: Bnd-1.50.0
+Bundle-Name: Hibernate Validator Engine
+Created-By: Apache Maven Bundle Plugin
+Implementation-URL: http://validator.hibernate.org
+Implementation-Vendor: org.hibernate
+Implementation-Vendor-Id: org.hibernate
+Bundle-Version: 5.0.2.Final
+Build-Jdk: 1.7.0_10-ea
+Bnd-LastModified: 1386867610492
+Bundle-ManifestVersion: 2
+Specification-Title: Bean Validation
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-Description: Hibernate's Bean Validation (JSR-303) reference im
+ plementation.
+Bundle-SymbolicName: org.hibernate.validator
+Import-Package: com.fasterxml.classmate;version="1.0.0",com.fasterxml.
+ classmate.members;version="1.0.0",javax.el;version="[2.0.0,4.0.0)",ja
+ vax.persistence;resolution:=optional;version="[2.0.0,3.0.0)",javax.va
+ lidation;version="[1.0.0,2.0.0)",javax.validation.constraints;version
+ ="[1.0.0,2.0.0)",javax.validation.constraintvalidation;version="[1.0.
+ 0,2.0.0)",javax.validation.executable;version="[1.0.0,2.0.0)",javax.v
+ alidation.groups;version="[1.0.0,2.0.0)",javax.validation.metadata;ve
+ rsion="[1.0.0,2.0.0)",javax.validation.spi;version="[1.0.0,2.0.0)",ja
+ vax.xml.bind;version=0,javax.xml.bind.annotation;version=0,javax.xml.
+ bind.annotation.adapters;version=0,javax.xml.namespace;version=0,java
+ x.xml.stream;version=0,javax.xml.stream.events;version=0,javax.xml.tr
+ ansform;version=0,javax.xml.transform.stream;version=0,javax.xml.vali
+ dation;version=0,org.jboss.logging;version="[3.1.0,4.0.0)",org.joda.t
+ ime;resolution:=optional;version="[1.6.0,2.0.0)",org.jsoup;resolution
+ :=optional;version="[1.5.2,2.0.0)",org.jsoup.safety;resolution:=optio
+ nal;version="[1.5.2,2.0.0)",org.xml.sax;version=0
+Specification-Version: 1.1
+Archiver-Version: Plexus Archiver
+
