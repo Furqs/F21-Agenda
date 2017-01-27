@@ -16,6 +16,7 @@ public class LoginController
 	{
 		return "formulario-login";
 	}
+	
 	@RequestMapping("efetuaLogin")
 	public String efetuaLogin(Usuario usuario, HttpSession session)
 	{
@@ -27,4 +28,10 @@ public class LoginController
 		return "redirect:loginForm";
 	}
 	
+	@RequestMapping("logout")
+	public String logout(HttpSession session)
+	{
+		session.invalidate();
+		return "redirect:loginForm";
+	}
 }
