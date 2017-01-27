@@ -5,10 +5,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<script type="text/javascript" src="js/jquery.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
+<script type="text/javascript">
+	function finalizaAgora(id)
+	{
+		$.post("finalizaTarefa",{'id':id},
+				function(resposta)
+				{
+					$("#tarefa_"+id).html(resposta);
+				});
+	}
+
+</script>
+
 <a href="novaTarefa">Criar nova tarefa</a>
 
 <br/><br/>
@@ -20,18 +33,14 @@
 		<th>Data de Finalização</th>
 	</tr>
 	<c:forEach items="${tarefas}" var="tarefa">
-		<c:choose>
-		<c:when  test="${(tarefa.id % 2) < 1} ">
-			<tr bgcolor="blue">
-		</c:when>
-		<c:otherwise>
-			<tr bgcolor="green">
-		</c:otherwise>
-		</c:choose>
+		<tr bgcolor="green" id="tarefa_${tarefa.id}">
+		
 			<td>${tarefa.id}</td>
 			<td>${tarefa.descricao}</td>
 			<c:if test="${tarefa.finalizado eq false }" >
-				<td>Não finalizado</td>
+				<td id="tarefa_${tarefa.id}">
+					<a href="#" onClick="finalizaAgora(${tarefa.id})"> Finalizar </a>
+				</td>
 			</c:if>
 			<c:if test="${tarefa.finalizado eq true }" >
 				<td>Finalizado</td>
