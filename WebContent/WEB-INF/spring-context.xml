@@ -25,4 +25,12 @@
 	<mvc:interceptors>
 		<bean class="br.com.caelum.tarefas.interceptor.AutorizadorInterceptor" />
 	</mvc:interceptors>
+	<bean id="mysqlDataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost/fj21"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value=""></property>
+	
+	
+	</bean>
 </beans>
